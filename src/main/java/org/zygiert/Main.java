@@ -20,7 +20,7 @@ public class Main {
     static void main(String[] args) {
         if (args.length != 1) {
             IO.println("Please provide a way to handle SSLContext creation!");
-            IO.println("Supported modes: JKS, PKCS12, PEM, JKS-BY-SYS-PROPS, PKCS12-BY-SYS-PROPS");
+            IO.println("Supported modes: JKS, PKCS12, PEM, JKS-BY-SYS-PROPS, PKCS12-BY-SYS-PROPS, BC, PEM");
             return;
         }
         SSLContextProvider sslContextProvider = prepareEnvAndPickSSLContextProvider(args[0]);
